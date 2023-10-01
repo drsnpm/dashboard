@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sidebar</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="main_box">
+        <input type="checkbox" id="check">
+        <label for="check">
+            <i class="fas fa fa-bars" id="btn"></i>
+            <i class="fas fa-times" id="cancel"></i>
+        </label>
+            <div class="side-bar">
+                <header>
+                   <img src="dd.jpg" alt="">
+                   <h1>Home</h1>
+                </header>
+                <div class="menu">
+                <div class="item"><a href=""><i class="fas fa fa-dashboard"></i>Dashboard</a></div>
+                <div class="item"><a class="sub-btn"><i class="fas fa-user-cog"></i>Profile
+                    <i class="fas fa-angle-right dropdown"></i>
+                </a>
+                <div class="sub-menu">
+                    <a href="" class="sub-item">Veiw</a><br>
+                    <a href="" class="sub-item">Update</a><br>
+                    <a href="" class="sub-item">Change Password</a>
+                </div>
+            </div>
+                
+                <div class="item"><a class="sub-btn"><i class="fas fa-train"></i>Trains
+                    <i class="fas fa-angle-right dropdown"></i>
+                </a>
+                <div class="sub-menu">
+                    <a href="" class="sub-item">Add Train</a><br>
+                    <a href="" class="sub-item">Manage Trains</a><br>
+                </div>
+            </div>
+                <div class="item"><a class="sub-btn"><i class="fas fa-user-check"></i>Employees
+                    <i class="fas fa-angle-right dropdown"></i>
+                </a>
+                <div class="sub-menu">
+                    <a href="" class="sub-item">Add Employee</a><br>
+                    <a href="" class="sub-item">Mange Employees</a><br>
+                </div>
+            </div>
+                <div class="item"><a class="sub-btn"><i class="fas fa-users"></i>Passengers
+                    <i class="fas fa-angle-right dropdown"></i>
+                </a>
+                <div class="sub-menu">
+                    <a href="" class="sub-item">Add Passengers</a><br>
+                    <a href="" class="sub-item">Manage Passengers</a><br>
+                </div>
+            </div>
+                <div class="item"><a class="sub-btn"><i class="fas fa-ticket"></i>Tickets
+                    <i class="fas fa-angle-right dropdown"></i>
+                </a>
+                <div class="sub-menu">
+                    <a href="" class="sub-item">Approved</a><br>
+                    <a href="" class="sub-item">Pending</a><br>
+                    <a href="" class="sub-item">Manage Tickets</a><br>
+                </div>
+            </div>
+                <div class="item"><a class="sub-btn"><i class="fas fa-key"></i>Password Reset
+                    <i class="fas fa-angle-right dropdown"></i>
+                </a>
+                <div class="sub-menu">
+                    <a href="" class="sub-item">Approved</a><br>
+                    <a href="" class="sub-item">Pending</a><br>
+                </div>
+            </div>
+                <div class="item"><a href=""><i class="fas fa-inr"></i>Accounting</a></div>
+                <div class="item"><a href=""><i class="fas fa-sign-out"></i>Log Out</a></div>
+            </div>
+        
+    </div>
+</div>
+
+<section class="container">
+    
+</section>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+<script>
+    $('.sub-btn').click(function(){
+        $(this).next('.sub-menu').slideToggle();
+        $(this).find('.dropdown').toggleClass('rorate');
+    });
+</script>
+</body>
+</html>
